@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'events-app-root',
+  template: `<h1>Hello</h1>
+  <img src="../assets/images/ng-nl.png" />
+  `
 })
 export class AppComponent {
   title = 'ng-fund';
