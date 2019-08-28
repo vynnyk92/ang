@@ -7,8 +7,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class EventThumbnailComponent implements OnInit {
 
-  @Input() event: any;
-  @Output() eventClick = new EventEmitter();
+  @Input() event: Event;
+
   
 
   constructor() { }
@@ -16,7 +16,6 @@ export class EventThumbnailComponent implements OnInit {
   ngOnInit() {
   }
 
-  public handleClickMe(){
-    this.eventClick.emit('foo');
-  }
+
+
 }
