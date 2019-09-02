@@ -5,3 +5,11 @@
 .thumbnail{
     min-height: 210px;
 }
+
+.green{
+    color: greenyellow !important;
+}
+
+.bold {
+    font-weight: bold;
+}
