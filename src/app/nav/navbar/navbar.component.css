@@ -13,3 +13,7 @@
 li {
     cursor: pointer;
 }
+
+.active{
+    color: coral !important;
+}

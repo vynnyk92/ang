@@ -16,6 +16,8 @@ import { routes } from './events/models/routes.routing';
 import { CreateEventComponent } from './events/create-event/create-event.component';
 import { Error404Component } from './errors/404/404.component';
 import { EventRouteActivatorService } from './events/models/EventRouteActivator.service';
+import { EventListResolver } from './events/models/event-list.resolver';
+import { AuthService } from './user/services/auth.service';
 
 @NgModule({
   imports: [
@@ -40,7 +42,9 @@ import { EventRouteActivatorService } from './events/models/EventRouteActivator.
     {
       provide: 'canDeacrivateCreteNewComponent',
       useValue: checkDirtyState
-    }
+    },
+    EventListResolver,
+    AuthService
   ],
 
 
